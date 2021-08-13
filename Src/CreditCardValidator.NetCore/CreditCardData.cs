@@ -19,8 +19,7 @@ namespace CreditCardValidator
         Maestro,
         MasterCard,
         RuPay,
-        [Obsolete("The Solo card scheme was decommissioned permanently on 31 March 2011. CreditCardValidator is no longer detecting it.")]
-        Solo,
+        ArCa,
         Switch,
         Visa,
         Unknown
@@ -153,6 +152,20 @@ namespace CreditCardValidator
             //        }
             //    }
             //});
+
+            BrandsData.Add(CardIssuer.ArCa, new BrandInfo
+            {
+                BrandName = "ArCa",
+                Rules = new List<Rule>
+                {
+                    // Based on comparing card numbers
+                    new Rule
+                    {
+                        Lengths = new List<int> {16},
+                        Prefixes = new List<string> {"9051"}
+                    }
+                }
+            });
 
             BrandsData.Add(CardIssuer.Switch, new BrandInfo
             {
