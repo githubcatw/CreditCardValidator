@@ -16,7 +16,7 @@ The following card issuers are supported:
 <td>Hipercard</td> <td>Visa</td>  <td>Laser</td> <td>ChinaUnionPay</td> <td>Dankort</td> 
 </tr>
 <tr>
-<td>Rupay</td> <td>Solo (Deprecated)</td> <td>Switch</td> <td>JCB</td>
+<td>Rupay</td> <td>ArCa</td> <td>Switch</td> <td>JCB</td>
 </tr>
 </table>
 
